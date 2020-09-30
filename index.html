@@ -13,10 +13,16 @@
                 <label><input class="TextEdit" name="input" type="text" size=28 value="" width="250px"></label>
             </td>
         </tr>
-		<tr>
+        <tr>
             <td><input type="button" name="+/-" value="+/-" OnClick="lab3.input.value *= '-1'"></td>
-            <td colspan=2>Casio</td>
+            <td colspan="2">Casio</td>
             <td><input class="bClear" name="clear" type="Button" value="C" OnClick="lab3.input.value = ''" /></td>
+        </tr>
+        <tr>
+            <td><input type="Button" name="(" value="(" OnClick="lab3.input.value += '('" /></td>
+            <td><input type="Button" name=")" value=")" OnClick="lab3.input.value += ')'" /></td>
+            <td><input class="bOperation" type="button" name="pow2" value="^2" OnClick="lab3.input.value = Math.pow(lab3.input.value,2)"/></td>
+            <td><input class="bOperation" type="button" name="sqrt" value="√" OnClick="lab3.input.value = Math.sqrt(lab3.input.value)"></td>
         </tr>
         <tr>
             <td><input type="button" name="seven" value="7" OnClick="lab3.input.value += '7'"></td>
